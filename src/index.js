@@ -360,7 +360,10 @@ function deleteContactFetch(id){
     list.remove();
     getContactsAndUpdateState(id-2); //index of item to display in view section
 
-    
+    if(state.contacts.length === 1){
+      state.selectedContact = null;
+      renderAddContactForm();
+    }
     
   })
 }
@@ -384,7 +387,9 @@ function updateContactFetch(content, nameOfDatabase, id){
 
 
 async function getContactsAndUpdateState(index){
-  if(index <0) index = 0;
+  if(index <0) {
+    index = 0;
+  }
 
   const gettingContacts = await getContacts();
   state.selectedContact = state.contacts[index];
