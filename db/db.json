@@ -1,0 +1,32 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "boris",
+      "lastName": "jo",
+      "blockContact": true,
+      "addressId": 1
+    },
+    {
+      "id": 2,
+      "firstName": "The",
+      "lastName": "Queen",
+      "blockContact": false,
+      "addressId": 2
+    }
+  ],
+  "addresses": [
+    {
+      "id": 1,
+      "street": "10 downing",
+      "city": "in london",
+      "postCode": "e12"
+    },
+    {
+      "id": 2,
+      "street": "Buckingham Palace",
+      "city": "London",
+      "postCode": "SW1A 1AA"
+    }
+  ]
+}
